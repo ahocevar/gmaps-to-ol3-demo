@@ -5,6 +5,9 @@ var map = new google.maps.Map(document.getElementById('map'),{
   center: exampleLoc,
   disableDefaultUI: true,
   zoomControl: true,
+  zoomControlOptions: {
+    style: google.maps.ZoomControlStyle.SMALL
+  },
   mapTypeId: google.maps.MapTypeId.ROADMAP
 });
 
