@@ -36,7 +36,7 @@ var circle = new google.maps.Circle({
 });
 
 var exampleKml = new google.maps.KmlLayer({
-  url: 'data/example.kml',
+  url: 'http://ahocevar.github.io/gmaps-to-ol3-demo/data/example.kml',
   clickable: false
 });
 exampleKml.setMap(map);
