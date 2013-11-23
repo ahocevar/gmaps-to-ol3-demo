@@ -39,3 +39,5 @@ var exampleKml = new google.maps.KmlLayer({
   url: 'data/example.kml',
   clickable: false
 });
+exampleKml.setMap(map);
+
