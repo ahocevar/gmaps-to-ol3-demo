@@ -17,12 +17,12 @@ var map = new google.maps.Map(document.getElementById('map'),{
 });
 
 var infowindow = new google.maps.InfoWindow({
-    content: 'Hello, world!'
+  content: 'Hello, world!'
 });
 
 var marker = new google.maps.Marker({
-    position: exampleLoc,
-    map: map
+  position: exampleLoc,
+  map: map
 });
 
 google.maps.event.addListener(marker, 'click', function() {
