@@ -1,3 +1,8 @@
+/*
+ * This is a slightly modified version of the Google Maps v3 example from
+ * https://www.mapbox.com/blog/switching-to-mapboxjs/
+ */
+
 var exampleLoc = new google.maps.LatLng(-25.363882,131.044922);
 
 var map = new google.maps.Map(document.getElementById('map'),{
