@@ -5,7 +5,7 @@ var map = new ol.Map({
   target: 'map',
   renderer: ol.RendererHint.CANVAS,
   view: new ol.View2D({
-    zoom: 4,
+    zoom: 3,
     center: exampleLoc
   }),
   layers: [new ol.layer.Tile({source: new ol.source.MapQuestOSM()})]
