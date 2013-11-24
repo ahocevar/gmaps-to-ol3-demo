@@ -12,12 +12,6 @@ var map = new ol.Map({
 });
 
 map.addOverlay(new ol.Overlay({
-  position: exampleLoc,
-  element: $('<div>').addClass('marker')
-      .tooltip({title: 'Hello, world!', trigger: 'click'})
-}));
-
-map.addOverlay(new ol.Overlay({
   element: $('<div>').addClass('circle'),
   position: exampleLoc
 }));
@@ -27,6 +21,12 @@ function setCircleSize() {
 }
 setCircleSize();
 map.getView().on('change:resolution', setCircleSize);
+
+map.addOverlay(new ol.Overlay({
+  position: exampleLoc,
+  element: $('<div>').addClass('marker')
+      .tooltip({title: 'Hello, world!', trigger: 'click'})
+}));
 
 var exampleKml = new ol.layer.Vector({
   source: new ol.source.Vector({
