@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
+    <Style id="style-line">
+      <LineStyle>
+        <color>#55ff002b</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+    <Style id="style-polygon">
+      <PolyStyle>
+        <color>#33ff002b</color>
+        <outline>1</outline>
+      </PolyStyle>
+      <LineStyle>
+        <color>#55ff002b</color>
+        <width>2</width>
+      </LineStyle>
+    </Style>
     <Placemark>
+      <styleUrl>#style-polygon</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -12,18 +29,21 @@
       <ExtendedData/>
     </Placemark>
     <Placemark>
+      <styleUrl>#style-line</styleUrl>
       <LineString>
         <coordinates>152.2265625,-7.623886853120036 153.369140625,-10.746969318459989 149.0625,-11.781325296112277 147.392578125,-11.005904459659451 144.755859375,-10.22843726615593 139.130859375,-10.22843726615593 135.615234375,-8.841651120809145 134.736328125,-7.18810087117902 131.8359375,-5.878332109674314 130.341796875,-1.845383988573187 129.7265625,1.4061088354351594 136.0546875,2.3723687086440632 145.107421875,-0.17578097424708533 149.4140625,-2.5479878714713706 152.314453125,-2.284550660236957 153.544921875,-2.8991526985043006 153.896484375,-6.315298538330021</coordinates>
       </LineString>
       <ExtendedData/>
     </Placemark>
     <Placemark>
+      <styleUrl>#style-line</styleUrl>
       <LineString>
         <coordinates>131.484375,-38.8225909761771 136.142578125,-40.913512576127566 145.283203125,-39.50404070558415 150.908203125,-39.36827914916012 151.34765625,-42.16340342422399 151.611328125,-45.52174389699363</coordinates>
       </LineString>
       <ExtendedData/>
     </Placemark>
     <Placemark>
+      <styleUrl>#style-polygon</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
