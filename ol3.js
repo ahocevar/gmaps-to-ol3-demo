@@ -18,7 +18,8 @@ map.addOverlay(new ol.Overlay({
   position: exampleLoc,
   element: $('<img src="resources/img/marker-blue.png">')
       .css({marginTop: '-200%', marginLeft: '-50%', cursor: 'pointer'})
-      .tooltip({title: 'Hello, world!', trigger: 'click'})
+      .tooltip({title: 'Hello, world!', trigger: 'click'}),
+  stopEvent: false
 }));
 
 map.on('postcompose', function(evt) {
